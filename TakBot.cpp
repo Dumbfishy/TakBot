@@ -1,16 +1,11 @@
-/***************************
- *
- *
- *  TakBot.cpp
- *  Kyle Johnston
- *
- *
- * ************************/
+/**************************
+*   TakBot.cpp
+*   Kyle Johnston
+*   
+**************************/
 
 #include <iostream>
 #include "TakBot.h"
-
-
 
 void showBoard();
 
@@ -25,11 +20,10 @@ int main()
 
 }
 
-
 void showBoard()
 {
     std::cout << "Getting ready to display board" << std::endl;
-    #define BOARD_SIZE 5
+    #define BOARD_SIZE 4
 
     std::cout << "  ";
 
@@ -40,19 +34,20 @@ void showBoard()
 
         std::cout << std::endl << " ";
 
-        for (int j = 0; j < 2; j++) {
+        for (int j = 0; j < 3; j++) {
             for (int i = 0; i < BOARD_SIZE + 1; i++) {
-               std::cout << BOARD_SIDE << "     ";
+                std::cout << BOARD_SIDE << "     ";
             }
             std::cout << std::endl << " ";
         }
-        std::cout << " ";
+            std::cout << " ";
     }
 
     for (int i = 0; i < BOARD_SIZE; i++) {
-       std::cout << BOARD_TOP << " ";
+        std::cout << BOARD_TOP << " ";
     }
 
     std::cout << std::endl;
 
 }
+
